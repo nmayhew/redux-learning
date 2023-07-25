@@ -2,7 +2,7 @@
   "name": "redux-book-started",
   "version": "1.0.0",
   "description": "Sample Redux Application",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --progress"
   },
