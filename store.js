@@ -1,19 +1,7 @@
 import { createStore } from 'redux';
 import rootReducer from './reducers/root';
 
-//Default state usually done in server rendering 
-const defaultState = {
-    recipes: [{
-        name: 'Omelette'
-    }],
-    ingredients: [{
-        recipe: 'Omelette',
-        name: 'Eggs',
-        quantity: 2
-    }]
-};
-
-const store = createStore(rootReducer, defaultState);
+const store = createStore(rootReducer); //Default state provided in reducers 
 
 window.store = store; // Making store globally availably    
 
