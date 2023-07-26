@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import store from './store';
-import { addRecipe } from './actions/recipe';
+import { addRecipe } from './actions/recipes';
 
 function updateUI() {
     const { recipes } = store.getState();
@@ -23,7 +23,7 @@ export default function loadUI() {
       <h2>Recipes:</h2>
       <ul></ul>
       <input type="text" />
-      <button>Add</button>
+      <button>Add Recipe</button>
     </div>
   `);
 
