@@ -1,7 +1,11 @@
-import { createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import rootReducer from './reducers/root';
+import logMiddleware from './log';
 
-const store = createStore(rootReducer); //Default state provided in reducers 
+const store = createStore(
+    rootReducer,
+    applyMiddleware(logMiddleware)
+); //Default state provided in reducers 
 
 window.store = store; // Making store globally availably    
 

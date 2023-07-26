@@ -1,4 +1,4 @@
-import { ADD_INGREDIENT } from '../actions/ingredients';
+import { ADD_INGREDIENT } from '../constants/actionTypes';
 const initialState = [];
 
 const ingredientsReducer = (ingredients = initialState, action) => {

@@ -1,6 +1,9 @@
 import store from "./store";
+import loadUI from "./ui";
 import { addRecipe } from "./actions/recipe";
 import { addIngredient } from "./actions/ingredients";
+
+loadUI();
 
 console.log(store.getState());
 
